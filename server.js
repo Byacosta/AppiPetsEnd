@@ -29,7 +29,7 @@ let categories = [
 // ***************************************************************
 
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to API REST")
+    res.status(200).send("Welcome to ApiRest PetsAppEnd")
 })
 
 app.get('/users', (req, res) => {
