@@ -84,7 +84,7 @@ app.post('/createUser', (req, res) => {
 })
 
 // List All The Quotes
-app.get('/Quotes', (req, res) => {
+app.get('/quotes', (req, res) => {
     let pos = 0;
     quotes.forEach(function(entry) {
         entry.id = pos;
