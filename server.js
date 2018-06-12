@@ -18,11 +18,11 @@ let users = [
 ];
 
 let quotes = [
-    {id: 0, name: 'Veterinaria Mascovet', address: 'Calle 11A no 33 esquina',phone '7202020', image: 'https://comps.canstockphoto.es/veterinario-el-se%C3%B1alar-de-la-mujer-clipart-vectorial_csp51117500.jpg'},
-	{id: 1, name: 'Veterinaria Cachorros', address: 'Calle Principal',phone '7207484', image: 'http://www.mundoanimalia.com/images/veterinario/fc/6c/c5/cc8c609563d2b30f18b01c0fa9e684b3/thumb4_logo_urgencias_8378.jpg'},
-	{id: 2, name: 'Pelqueria Peluches', address: 'Mz 28 Cs 4 Aranda',phone '3152505986', image: 'https://2.bp.blogspot.com/-8GUFDakqyDM/V4aWKRANwOI/AAAAAAAACaA/cq1P7c-Yi0AaFkcJoaDUODk8VuHX5FaPQCKgB/s1600/PELUQUERIA%2BCANINA.jpg'},
-	{id: 3, name: 'Peluqueria Espumitas', address: 'Calle Falsa 123',phone '3115648790', image: 'http://www.mundoanimalia.com/images/peluqueria/37/7f/da/0f31cf4c07210e8d5460b43c17e11798/thumb4_peluqueria_canina_servimascotas__9737.jpg'},
-	{id: 4, name: 'Veterniaria Dogtor', address: 'Mary Luz',phone '3174960963', image: 'https://www.adiestramientocaninos.com/wp-content/uploads/2018/02/consejos-para-elegir-clinicas-veterinarias-en-bogota.jpg'}
+    {id: 0, name: 'Veterinaria Mascovet', address: 'Calle 11A no 33 esquina',phone: '7202020', image: 'https://comps.canstockphoto.es/veterinario-el-se%C3%B1alar-de-la-mujer-clipart-vectorial_csp51117500.jpg'},
+	{id: 1, name: 'Veterinaria Cachorros', address: 'Calle Principal',phone: '7207484', image: 'http://www.mundoanimalia.com/images/veterinario/fc/6c/c5/cc8c609563d2b30f18b01c0fa9e684b3/thumb4_logo_urgencias_8378.jpg'},
+	{id: 2, name: 'Pelqueria Peluches', address: 'Mz 28 Cs 4 Aranda',phone: '3152505986', image: 'https://2.bp.blogspot.com/-8GUFDakqyDM/V4aWKRANwOI/AAAAAAAACaA/cq1P7c-Yi0AaFkcJoaDUODk8VuHX5FaPQCKgB/s1600/PELUQUERIA%2BCANINA.jpg'},
+	{id: 3, name: 'Peluqueria Espumitas', address: 'Calle Falsa 123',phone: '3115648790', image: 'http://www.mundoanimalia.com/images/peluqueria/37/7f/da/0f31cf4c07210e8d5460b43c17e11798/thumb4_peluqueria_canina_servimascotas__9737.jpg'},
+	{id: 4, name: 'Veterniaria Dogtor', address: 'Mary Luz',phone: '3174960963', image: 'https://www.adiestramientocaninos.com/wp-content/uploads/2018/02/consejos-para-elegir-clinicas-veterinarias-en-bogota.jpg'}
 ];
 
 // ***************************************************************
