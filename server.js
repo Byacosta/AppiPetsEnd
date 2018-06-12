@@ -19,10 +19,10 @@ let users = [
 
 let quotes = [
     {id: 0, name: 'Veterinaria Mascovet', address: 'Calle 11A no 33 esquina',phone '7202020', image: 'http://www.mascovetconstanti.com/img/ofertes/oferta01hr.jpg'},
-	{id: 0, name: 'Veterinaria Cachorros', address: 'Calle Principal',phone '7207484', image: 'http://www.educagratis.org/imagenes/animales/Aula-Virtual-Cursos-Gratis-Peluqueria-Canina-Perros.jpg'},
-	{id: 0, name: 'Pelqueria Peluches', address: 'Mz 28 Cs 4 Aranda',phone '3152505986', image: 'https://images.evisos.cl/2013/03/31/peluqueria-canina-pelucan-centro-de-villa-alemana_10b86b2e46_3.jpg'},
-	{id: 0, name: 'Peluqueria Espumitas', address: 'Calle Falsa 123',phone '3115648790', image: 'https://4.bp.blogspot.com/-iXapAxX1iGQ/VihkXBlk7wI/AAAAAAAAOoQ/scVe8Wc7kUc/s640/veterinaria%2Ba%2Bdomicilio.jpg'},
-	{id: 0, name: 'Veterniaria Dogtor', address: 'Mary Luz',phone '3174960963', image: 'http://bisnet.com.co/images/empresas/veterinaria_comuneros/veterinaria_comuneros.jpg'},
+	{id: 1, name: 'Veterinaria Cachorros', address: 'Calle Principal',phone '7207484', image: 'http://www.educagratis.org/imagenes/animales/Aula-Virtual-Cursos-Gratis-Peluqueria-Canina-Perros.jpg'},
+	{id: 2, name: 'Pelqueria Peluches', address: 'Mz 28 Cs 4 Aranda',phone '3152505986', image: 'https://images.evisos.cl/2013/03/31/peluqueria-canina-pelucan-centro-de-villa-alemana_10b86b2e46_3.jpg'},
+	{id: 3, name: 'Peluqueria Espumitas', address: 'Calle Falsa 123',phone '3115648790', image: 'https://4.bp.blogspot.com/-iXapAxX1iGQ/VihkXBlk7wI/AAAAAAAAOoQ/scVe8Wc7kUc/s640/veterinaria%2Ba%2Bdomicilio.jpg'},
+	{id: 4, name: 'Veterniaria Dogtor', address: 'Mary Luz',phone '3174960963', image: 'http://bisnet.com.co/images/empresas/veterinaria_comuneros/veterinaria_comuneros.jpg'},
 ];
 
 // ***************************************************************
