@@ -17,12 +17,12 @@ let users = [
     {id: 1, name: 'Brian Yessid', lastname: 'Acosta Mosquera', noid: '1085283982', login: 'BrianA', password:'456', address: 'Corazon De Jesus', email: 'yessidbryan@gmail.com', sex:'Masculino'}
 ];
 
-let categories = [
-    {id: 0, name: 'Health', description: '', image: 'http://stokpic.com/wp-content/uploads/2018/03/Man-looking-out-to-the-ocean-at-a-sail-boat.jpg'},
-	{id: 1, name: 'Quotes', description: '', image: 'https://image.freepik.com/vector-gratis/veterinaria-con-un-perro_1196-293.jpg'},
-	{id: 2, name: 'Vaccinations', description: '', image: 'https://i.pinimg.com/originals/19/21/c5/1921c593d779b5b6df42e2bdc984c3b8.jpg'},
-	{id: 3, name: 'Walks', description: '', image: 'https://www.mundomascotas.info/wp-content/uploads/2014/12/ense%C3%B1ar-a-pasear-a-un-cachorro.jpg'},
-	{id: 4, name: 'Recommendations', description: '', image: 'http://mundocan.com.mx/blog/wp-content/uploads/2014/02/cuidados-para-perros.jpg'}
+let quotes = [
+    {id: 0, name: 'Veterinaria Mascovet', address: 'Calle 11A no 33 esquina',phone '7202020', image: 'http://www.mascovetconstanti.com/img/ofertes/oferta01hr.jpg'},
+	{id: 0, name: 'Veterinaria Cachorros', address: 'Calle Principal',phone '7207484', image: 'http://www.educagratis.org/imagenes/animales/Aula-Virtual-Cursos-Gratis-Peluqueria-Canina-Perros.jpg'},
+	{id: 0, name: 'Pelqueria Peluches', address: 'Mz 28 Cs 4 Aranda',phone '3152505986', image: 'https://images.evisos.cl/2013/03/31/peluqueria-canina-pelucan-centro-de-villa-alemana_10b86b2e46_3.jpg'},
+	{id: 0, name: 'Peluqueria Espumitas', address: 'Calle Falsa 123',phone '3115648790', image: 'https://4.bp.blogspot.com/-iXapAxX1iGQ/VihkXBlk7wI/AAAAAAAAOoQ/scVe8Wc7kUc/s640/veterinaria%2Ba%2Bdomicilio.jpg'},
+	{id: 0, name: 'Veterniaria Dogtor', address: 'Mary Luz',phone '3174960963', image: 'http://bisnet.com.co/images/empresas/veterinaria_comuneros/veterinaria_comuneros.jpg'},
 ];
 
 // ***************************************************************
@@ -83,43 +83,46 @@ app.post('/createUser', (req, res) => {
     res.send(usersTmp)
 })
 
-// List All The Categories
-app.get('/categories', (req, res) => {
+// List All The Quotes
+app.get('/Quotes', (req, res) => {
     let pos = 0;
-    categories.forEach(function(entry) {
+    quotes.forEach(function(entry) {
         entry.id = pos;
         pos++;
     });
-    res.send(categories)
+    res.send(quotes)
 })
 
-// Delete a Category
-app.delete('/categories/:id',(req, res) => {
+// Delete a Quotes
+app.delete('/quotes/:id',(req, res) => {
     let params = req.params;
-    categories.splice(params.id, 1);
-    res.send('Category delete')
+    quotes.splice(params.id, 1);
+    res.send('Quotes delete')
 })
 
-// Update a category
-app.put('/categories/:id',(req, res) => {
+// Update A Quotes
+app.put('/quotes/:id',(req, res) => {
     let params = req.params;
     let data = req.body;
-    categories[params.id]['name'] = data.Name;
-	categories[params.id]['description'] = data.Description;
-    res.send("categories update")
+    quotes[params.id]['name'] = data.Name;
+	quotes[params.id]['address'] = data.Address;
+	quotes[params.id]['phone'] = data.Phone;
+	
+    res.send("Quotes Update")
 })
 
-// Create A Category
-app.post('/categories', (req, res) => {
+// Create A Quotes
+app.post('/quotes', (req, res) => {
     let data = req.body;
-    let consecutive = categories.length;
-    let contactTmp = [{
+    let consecutive = quotes.length;
+    let quotesTmp = [{
         id: consecutive,
         name: data.Name,
-        description: data.Description,
-        image: 'https://i.pinimg.com/originals/71/57/e1/7157e1cdebbb331bfacdec1e75275858.jpg'
+        address: data.Address,
+		phone: data.Phone,
+        image: 'https://urgenciasveterinarias.co/wp-content/uploads/2016/09/veterinario_quimbaya_quindio.png'
     }];
-    categories.push(contactTmp[0])
+    quotes.push(quotesTmp[0])
 
     res.send("Category Create")
 })
