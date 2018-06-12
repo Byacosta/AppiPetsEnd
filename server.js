@@ -84,7 +84,7 @@ app.post('/createUser', (req, res) => {
 })
 
 // List All The Quotes
-app.get('/quotes', (req, res) => {
+app.get('/quotess', (req, res) => {
     let pos = 0;
     quotes.forEach(function(entry) {
         entry.id = pos;
@@ -94,14 +94,14 @@ app.get('/quotes', (req, res) => {
 })
 
 // Delete a Quotes
-app.delete('/quotes/:id',(req, res) => {
+app.delete('/quotess/:id',(req, res) => {
     let params = req.params;
     quotes.splice(params.id, 1);
     res.send('Quotes delete')
 })
 
 // Update A Quotes
-app.put('/quotes/:id',(req, res) => {
+app.put('/quotess/:id',(req, res) => {
     let params = req.params;
     let data = req.body;
     quotes[params.id]['name'] = data.Name;
@@ -112,7 +112,7 @@ app.put('/quotes/:id',(req, res) => {
 })
 
 // Create A Quotes
-app.post('/quotes', (req, res) => {
+app.post('/quotess', (req, res) => {
     let data = req.body;
     let consecutive = quotes.length;
     let quotesTmp = [{
