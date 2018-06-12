@@ -120,7 +120,7 @@ app.post('/quotess', (req, res) => {
         name: data.Name,
         address: data.Address,
 		phone: data.Phone,
-        image: 'https://urgenciasveterinarias.co/wp-content/uploads/2016/09/veterinario_quimbaya_quindio.png'
+        image: 'https://comps.canstockphoto.es/veterinario-el-se%C3%B1alar-de-la-mujer-clipart-vectorial_csp51117500.jpg'
     }];
     quotes.push(quotesTmp[0])
 
